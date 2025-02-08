@@ -4,8 +4,8 @@ import { Delete, Filter } from "lucide-react";
 
 type PropsType = {
   selectedAlphabets: string[];
-  setSelectedAlphabets: (value: string[]) => void;
-  setCurrentPage: (value: number) => void;
+  setSelectedAlphabets: React.Dispatch<React.SetStateAction<string[]>>;
+  setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
 };
 
 const ALPHABETS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
@@ -17,9 +17,9 @@ const AlphabetFilter = ({
 }: PropsType) => {
   const toggleAlphabet = (letter: string) => {
     setCurrentPage(1);
-    setSelectedAlphabets((prev) =>
+    setSelectedAlphabets((prev: string[]) =>
       prev.includes(letter)
-        ? prev.filter((l) => l !== letter)
+        ? prev.filter((l: string) => l !== letter)
         : [...prev, letter]
     );
   };

@@ -1,5 +1,5 @@
 import Hero from "@/components/hero";
-import Portfolios from "@/components/Portfolios";
+import Portfolios from "@/components/portfolios";
 import { Separator } from "@/components/ui/separator";
 import { portfolioData } from "@/data/porfolioData";
 
