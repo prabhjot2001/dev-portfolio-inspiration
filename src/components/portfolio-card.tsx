@@ -25,7 +25,7 @@ const PortfolioCard = ({ portfolio, isGridLayout }: PropsType) => {
         <div className="relative h-48 p-1">
           {portfolio.imageUrl ? (
             <img
-              src={portfolio.imageUrl}
+              src={`${import.meta.env.BASE_URL}${portfolio.imageUrl}`}
               alt={`${portfolio.name}'s portfolio`}
               className="w-full h-full object-cover rounded-lg"
             />
