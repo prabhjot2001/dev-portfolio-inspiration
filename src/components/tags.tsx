@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Delete, TagsIcon } from "lucide-react";
 
 type PropsType = {
@@ -50,7 +50,7 @@ const Tags = ({
 
             {/* -- Clear all tags button -- */}
             <Button
-              variant={"secondary"}
+              variant={"destructive"}
               onClick={() => setSelectedTags([])}
               className="flex items-center gap-2"
             >

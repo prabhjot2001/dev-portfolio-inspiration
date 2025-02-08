@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import GoToPage from "./goto-page";
+import GoToPage from "@/components/goto-page";
 
 type PropsType = {
   setCurrentPage: (value: number) => void;

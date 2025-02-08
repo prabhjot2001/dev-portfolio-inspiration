@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { Delete, Filter } from "lucide-react";
 
 type PropsType = {
@@ -54,7 +54,10 @@ const AlphabetFilter = ({
             {letter}
           </Button>
         ))}
-        <Button variant={"secondary"} onClick={() => setSelectedAlphabets([])}>
+        <Button
+          variant={"destructive"}
+          onClick={() => setSelectedAlphabets([])}
+        >
           Clear all <Delete className="w-4" />
         </Button>
       </section>

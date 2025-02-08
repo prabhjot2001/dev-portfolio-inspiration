@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Braces, Github } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
-import AddTooltip from "./add-tooltip";
+import AddTooltip from "@/components/add-tooltip";
 
 const Navbar = () => {
   const navLinks = [

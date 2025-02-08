@@ -1,12 +1,12 @@
 import { useState, useEffect, useMemo } from "react";
-import PortfolioCard from "./portfolio-card";
-import Pagination from "./pagination";
+import PortfolioCard from "@/components/portfolio-card";
+import Pagination from "@/components/pagination";
+import { Button } from "@/components/ui/button";
+import SearchBar from "@/components/search-bar";
+import AddTooltip from "@/components/add-tooltip";
+import Tags from "@/components/tags";
+import AlphabetFilter from "@/components/alphabet-filter";
 import { ArrowDownAZ, ArrowUpZA, LayoutGrid, List } from "lucide-react";
-import { Button } from "./ui/button";
-import SearchBar from "./search-bar";
-import AddTooltip from "./add-tooltip";
-import Tags from "./tags";
-import AlphabetFilter from "./alphabet-filter";
 
 type PropType = {
   name: string;
