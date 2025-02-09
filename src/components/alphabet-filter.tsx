@@ -28,7 +28,7 @@ const AlphabetFilter = ({
     useState<boolean>(false);
 
   return (
-    <div className="flex flex-wrap gap-2 mb-4 border rounded-lg p-2 ">
+    <div className="flex flex-wrap gap-2 rounded-lg p-2 border">
       <div className="py-2 flex items-center justify-between w-full">
         <p className="text-muted-foreground ">Filter By Alphabets</p>
         <Button
@@ -36,7 +36,7 @@ const AlphabetFilter = ({
           onClick={() => setToggleAlphabetFilter((prev) => !prev)}
         >
           <Filter />
-          {toggleAlphabetFilter ? "Close" : "Open"}
+          {toggleAlphabetFilter ? "Close filter" : "Open filter"}
         </Button>
       </div>
       <section

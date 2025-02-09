@@ -92,9 +92,9 @@ const Portfolios = ({ portfolioData }: { portfolioData: PropType[] }) => {
       <h2 className="scroll-m-20 text-2xl font-semibold tracking-tight lg:text-3xl text-center mb-12">
         Find your next inspiration here! ✨
       </h2>
-      <div className="mb-4 space-y-4">
+      <div className="mb-6 space-y-2">
         {/* Search Bar */}
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center justify-between gap-2 flex-wrap">
           <div className="flex-1">
             <SearchBar
               searchQuery={searchQuery}
@@ -138,7 +138,7 @@ const Portfolios = ({ portfolioData }: { portfolioData: PropType[] }) => {
       </div>
 
       {/* Toggle view */}
-      <div className="flex justify-end w-full mb-8">
+      <div className="flex justify-end w-full mb-6">
         <AddTooltip tooltipContent="Change layout">
           <Button variant={"outline"} onClick={toggleLayout}>
             {isGridLayout ? <List /> : <LayoutGrid />}
