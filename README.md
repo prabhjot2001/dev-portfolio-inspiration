@@ -69,7 +69,7 @@ We welcome contributions! Feel free to fork the repository, make changes, and cr
 
 
 ## 📝 License
-
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 
