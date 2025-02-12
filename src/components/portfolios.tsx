@@ -101,23 +101,6 @@ const Portfolios = ({ portfolioData }: { portfolioData: PropType[] }) => {
               setSearchQuery={setSearchQuery}
             />
           </div>
-
-          {/* Sort Direction */}
-          <Button
-            variant={"outline"}
-            size="lg"
-            onClick={() =>
-              setSortDirection((prev) => (prev === "asc" ? "desc" : "asc"))
-            }
-            className="py-7  dark:border-slate-300"
-          >
-            Sort{" "}
-            {sortDirection === "asc" ? (
-              <ArrowUpZA className="w-4" />
-            ) : (
-              <ArrowDownAZ className="w-4" />
-            )}
-          </Button>
         </div>
 
         {/* Tags */}
@@ -138,12 +121,28 @@ const Portfolios = ({ portfolioData }: { portfolioData: PropType[] }) => {
       </div>
 
       {/* Toggle view */}
-      <div className="flex justify-end w-full mb-6">
+      <div className="flex justify-end w-full mb-6 gap-2">
         <AddTooltip tooltipContent="Change layout">
           <Button variant={"outline"} onClick={toggleLayout}>
             {isGridLayout ? <List /> : <LayoutGrid />}
           </Button>
         </AddTooltip>
+
+        {/* Sort Direction */}
+        <Button
+          variant={"outline"}
+          onClick={() =>
+            setSortDirection((prev) => (prev === "asc" ? "desc" : "asc"))
+          }
+          className="dark:border-slate-300"
+        >
+          Sort{" "}
+          {sortDirection === "asc" ? (
+            <ArrowUpZA className="w-4" />
+          ) : (
+            <ArrowDownAZ className="w-4" />
+          )}
+        </Button>
       </div>
 
       {/* Portfolio Grid */}
